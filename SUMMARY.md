@@ -1,4 +1,5 @@
 # Summary
 
-* Core Components
+* [Introduction](README.md)
+* [Core Components](core-components/hal-core.md)
 
