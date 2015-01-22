@@ -2,6 +2,6 @@
 
 * [Introduction](README.md)
 * [Core Components](core/readme.md)
-* Metrics 
+* [Metrics ](metrics/readme.md)
 * Cloud Enablement
 
