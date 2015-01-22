@@ -2,7 +2,7 @@
 
 Sometimes it’s required to verify a domain setup with multiple hosts involved. But what if only a single machine is at your service? This document describes a simple setup that allows you to create a WildFly domain on a number of virtual hosts: Simply by binding the host controllers to virtual network interfaces.
 
-## Create a slave controller configuration
+## Create a host controller configuration
 
 Create a copy of the domain directory that ships with the default distribution.
 
@@ -28,7 +28,7 @@ The second step is as simple. Instead of declaring another master controller (el
 
 For our purposes we stick with the expressions (${foo.bar}), because it allows us to easily pass in arguments from the command line. But you could as well provide fixed values.
 
-## Starting the host controller and it slave
+## Starting the domain controller
 
 Bring up the domain by starting the domain controller:
 
