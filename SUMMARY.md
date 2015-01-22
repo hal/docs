@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Core Components
+* [Core Components](core-components/hal-core.md)
 * Metrics 
 * Cloud Enablement
 
