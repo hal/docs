@@ -1,4 +1,4 @@
 # Summary
 
-* Core Components
+* [Introduction](README.md)
 
