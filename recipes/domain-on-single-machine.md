@@ -17,7 +17,7 @@ The slave controller configuration (domain2/configuration/host.xml) requires two
 The first step requires you to chose a name that distinct across the domain. We are going to name it “slave.local”:
 
 ```xml
-<host name="slave.local" xmlns="urn:jboss:domain:1.3">
+<host name="slave.local" xmlns="urn:jboss:domain:2.2">
 ```
 
 The second step is as simple. Instead of declaring another master controller (element) we point the slave controller to a master it should connect to:
@@ -58,4 +58,4 @@ After a while the main controller registers it:
 
     [Host Controller] 13:52:12,494 INFO  [org.jboss.as.domain] (Host Controller Service Threads - 28) JBAS010918: Registered remote slave host "slave.local", WildFly 8.2.0.Final "Tweek"
 
-This means the domain including both “hosts” (aka ‘master’ and ‘slave.local’) is up and running. The same steps would be necessary to create a domain with two physical distinct hosts.
+This means the domain including both “hosts” (aka 'master' and 'slave.local') is up and running. The same steps would be necessary to create a domain with two physical distinct hosts.
