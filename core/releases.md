@@ -1,6 +1,6 @@
 # HAL Releases
 
-This page shows a version matrix for the various HAL releases and how they relate to WildFly and EAP releases. Both the core console (w/o extensions) and the release stream (w/ extensions) are listed. 
+This page shows a version matrix for the various HAL releases and how they relate to WildFly and EAP releases. Both the release stream (w/ extensions) and the core console (w/o extensions) are listed.
 
 ## WildFly
 
