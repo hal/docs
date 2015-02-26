@@ -4,7 +4,7 @@ This chapter describes distribution models for the HAL management console. Basic
    
 ### Bundled with WildFly
 
-Each WildFly installation ships with a specific version of the HAL management console. This model applies to all versions of HAL prior to [2.6.4.Final](versions/2.6.4.Final.md). To find out which version of HAL relates to the different WildFly and EAP versions, take a look at the [released versions](versions/README.md) page. 
+Each WildFly installation ships with a specific version of the HAL management console. This model applies to all versions of HAL prior to [2.6.4.Final](versions/2.6.4.Final.md). To find out which version of HAL relates to the different WildFly and EAP versions, take a look at the [released versions](versions/) page. 
 
 ### Standalone / Hosted
 

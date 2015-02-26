@@ -11,7 +11,6 @@
 - Release Coordination
   - [Distribution](release-coordination/distribution.md)
   - [Released Versions](release-coordination/versions/README.md)
-    - [2.6.4.Final](release-coordination/versions/2.6.4.Final.md)
 - [Community](community/README.md)
 - [Contribute](contribute/README.md)
 - Recipes / How To
