@@ -19,3 +19,9 @@ EAP Version | Release Stream | Core Console | Issue | Released
 6.3.0.GA | [2.2.8.Final](https://github.com/hal/release-stream/tree/2.2.8.Final) | [2.2.8.Final](https://github.com/hal/core/tree/2.2.8.Final) | [BZ1104216](https://bugzilla.redhat.com/show_bug.cgi?id=1104216) | &#10003;
 6.3.1 (CP01) | [2.2.10.Final](https://github.com/hal/release-stream/tree/2.2.10.Final) | [2.2.10.Final](https://github.com/hal/core/tree/2.2.10.Final) | [BZ1128755](https://bugzilla.redhat.com/show_bug.cgi?id=1128755) | &#10003;
 6.4.x | 2.5.x | 2.5.x | n/a | &#128683;
+
+### Independent
+
+Release Stream | Core Console | Issue | Released
+--- | --- | ---| ---
+[2.6.4.Final](https://github.com/hal/release-stream/tree/2.6.4.Final) | [2.6.4.Final](https://github.com/hal/core/tree/2.6.4.Final) | [WFLY-4107](https://issues.jboss.org/browse/WFLY-4107) | &#10003;
