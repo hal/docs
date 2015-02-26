@@ -1,8 +1,8 @@
-# HAL Releases
+## Released Versions
 
-This page shows a version matrix for the various HAL releases and how they relate to WildFly and EAP releases. Both the release stream (w/ extensions) and the core console (w/o extensions) are listed.
+This page shows the version matrix for the various HAL releases and how they relate to WildFly and EAP releases. Both the release stream (w/ extensions) and the core console (w/o extensions) are listed.
 
-## WildFly
+### WildFly
 
 WildFly Version | Release Stream | Core Console | Issue | Released
 --- | --- | --- | ---| ---
@@ -11,7 +11,7 @@ WildFly Version | Release Stream | Core Console | Issue | Released
 8.2.0.Final | [2.4.9.Final](https://github.com/hal/release-stream/tree/2.4.9.Final) | [2.4.9.Final](https://github.com/hal/core/tree/2.4.9.Final) | [WFLY-4107](https://issues.jboss.org/browse/WFLY-4107) | &#10003;
 9.0.x | 2.6.x | 2.6.x | n/a | &#128683;
 
-## EAP
+### EAP
 
 EAP Version | Release Stream | Core Console | Issue | Released
 --- | --- | --- | ---| ---
