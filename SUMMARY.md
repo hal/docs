@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](introduction/README.md)
 * [Building Blocks](building-blocks/README.md)
   * [Data Model](building-blocks/dmr.md) 
   * [Framework / MVP](building-blocks/gwtp.md) 
