@@ -1,6 +1,6 @@
 # Released Versions
 
-This page shows the version matrix for the various HAL releases and how they relate to WildFly and EAP releases. The last section lists versions which are not bound to a specific WildFly or EAP version, but which are available as standalone console.
+This page shows the version matrix for the various HAL releases and how they relate to WildFly and EAP releases. The last section lists versions which are not bound to a specific WildFly or EAP version, but which are available as standalone consoles.
 
 ## WildFly
 
