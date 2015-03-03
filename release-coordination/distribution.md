@@ -37,6 +37,15 @@ Use the following CLI commands to add `http://access-halproject.rhcloud.com` to 
 Once you've setup the list of allowed origins, you can choose a console version from http://access-halproject.rhcloud.com to manage your WildFly instance. Say you want access your local WildFly instance with the HAL management console 2.6.5.Final. Follow these steps in order to do so:
  
 1. Point your browser to https://access-halproject.rhcloud.com/release/2.6.5.Final
-1. Click 'Add' to configure a management endpoint
+
+1. Click 'Add' to configure a management endpoint.
 
   ![Connect to Management Interface](/assets/images/bootstrap_server_select_0.png)
+
+1. Add the hostname and port of you local WildFly instance. You can verify your settings using 'Ping'.
+
+  ![Connect to Management Interface](/assets/images/bootstrap_server_select_1.png)
+
+1. Click 'Connect' to finish the management interface setup. 
+
+  ![Connect to Management Interface](/assets/images/bootstrap_server_select_2.png)
