@@ -34,9 +34,9 @@ Use the following CLI commands to add `http://access-halproject.rhcloud.com` to 
         /host=master/core-service=management/management-interface=http-interface:list-add(name=allowed-origins,value=http://access-halproject.rhcloud.com)
         reload --host=master
 
-Once you've setup the list of allowed origins, you can choose a console version from http://access-halproject.rhcloud.com to manage your WildFly instance. Say you want access your local WildFly instance with the HAL management console 2.6.5.Final. Follow these steps in order to do so:
+Once you've setup the list of allowed origins, you can choose a console version from http://access-halproject.rhcloud.com to manage your WildFly instance. Say you want access your local WildFly instance with the HAL management console 2.6.5.Final. Follow these steps to configure your local WildFly instance:
  
-1. Point your browser to https://access-halproject.rhcloud.com/release/2.6.5.Final
+1. Point your browser to http://access-halproject.rhcloud.com/release/2.6.5.Final
 
 1. Click 'Add' to configure a management endpoint.
 
@@ -46,6 +46,17 @@ Once you've setup the list of allowed origins, you can choose a console version 
 
   ![Connect to Management Interface](/assets/images/bootstrap_server_select_1.png)
 
-1. Click 'Connect' to finish the management interface setup. 
+1. Click 'Connect' to finish. 
 
   ![Connect to Management Interface](/assets/images/bootstrap_server_select_2.png)
+
+You can use an existing configuration using the `connect` query parameter. For the above example this url is a shortcut and will skip the bootstrap dialogs: http://access-halproject.rhcloud.com/2.6.5.Final/App.html?connect=local
+
+### Limitations and Known Problems
+
+When using the standalone console there are some pitfalls and preconditions you should be aware of:
+ 
+- The standalone console can only connect to WildFly 9.x and above.
+- Make sure to configure the allowed origins before connecting from the standalone console.
+- Don't use different schemes (https and http) for the standalone console and the WildFly instance you want to connect to.
+- In rare cases it might be necessary to clear the cache or use the browser's private mode when switching between different WildFly instances. 
