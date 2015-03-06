@@ -1,3 +1,5 @@
 docs.wiki
 wiki
 .idea
+.DS_Store
+release-coordination/.DS_Store
