@@ -8,6 +8,7 @@
   - [Ballroom](building-blocks/ballroom.md) 
   - [Model Driven Widgets](building-blocks/mbui.md) 
   - [Extensions](building-blocks/extensions.md) 
+  - [Security](building-blocks/security.md)
 - Release Coordination
   - [Distribution](release-coordination/distribution.md)
   - [Released Versions](release-coordination/versions/README.md)
