@@ -20,6 +20,15 @@ Using this kind of setup has several advantages:
 
 In order to make this work, restrictions that come with the [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) (SOP) need to be resolved. Such restrictions arise when the console is served from origin A, but talks to the management interface on origin B. Starting with WildFly 9, the http interface supports the configuration of so-called allowed origins. That is a list of URLs which are allowed to access to the http interface (see http://en.wikipedia.org/wiki/Cross-origin_resource_sharing for more details).
 
+### BYO (Build Your Own)
+
+Instead using the prebuilt proxy on OpenShift, you can also checkout the source code and run your own build proxy:
+ 
+1. Clone the registry from https://github.com/hal/mvn-repo-server
+1. Build the proxy with Maven: `mvn clean package` (requires Java 8)
+1. Start the proxy: `java -jar target/server-jar-with-dependencies.jar` (by default port 8080 is used)
+1. Open http://localhost:8080/
+
 ### Allowed Origins Setup
 
 Use the following CLI commands to add `http://access-halproject.rhcloud.com` to the list of allowed origins:
