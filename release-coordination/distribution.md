@@ -29,6 +29,8 @@ Instead using the prebuilt proxy on OpenShift, you can also checkout the source 
 1. Start the proxy: `java -jar target/server-jar-with-dependencies.jar` (by default port 8080 is used)
 1. Open http://localhost:8080/
 
+Don't forget to add http://localhost:8080 as allowed origin (see below).
+
 ### Allowed Origins Setup
 
 Use the following CLI commands to add `http://access-halproject.rhcloud.com` to the list of allowed origins:
