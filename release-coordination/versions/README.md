@@ -1,6 +1,6 @@
 # Released Versions
 
-This page shows the version matrix for the various HAL releases and how they relate to WildFly and EAP releases. 
+This page shows the version matrix for the various HAL releases and how they relate to WildFly and EAP releases.
 
 ## WildFly
 
