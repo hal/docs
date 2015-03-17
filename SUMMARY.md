@@ -19,6 +19,7 @@
     - [2.2.10.Final](release-coordination/versions/2.2.10.Final.md)
     - [2.4.9.Final](release-coordination/versions/2.4.9.Final.md)
     - [2.6.5.Final](release-coordination/versions/2.6.5.Final.md)
+    - [2.6.6.Final](release-coordination/versions/2.6.6.Final.md)
   - [Snapshots](release-coordination/snapshots/README.md)
   - [Current Development](release-coordination/development.md)
   - [Roadmap](release-coordination/roadmap.md)
