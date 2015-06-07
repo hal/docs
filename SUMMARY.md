@@ -28,3 +28,4 @@
 - Recipes / How To
   - [Running a domain on a single machine](recipes/domain-on-single-machine.md)
   - [Debugging the Console](recipes/debugging.md)
+  - [JDBC Driver / DataSource Setup](jdbc-driver-setup.md)
