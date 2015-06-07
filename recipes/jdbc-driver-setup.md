@@ -32,7 +32,7 @@ The name of the driver file may vary, so make sure you declare exactly the same 
 )
 ``` 
 
-and this command if you're using the domain mode: 
+and this command if you're using domain mode: 
 
 
 ```
