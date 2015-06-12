@@ -17,5 +17,6 @@ EAP Version | HAL Version
 --- | ---
 6.2.0.GA | [2.0.6.Final](2.0.6.Final.md)
 6.3.0.GA | [2.2.8.Final](2.2.8.Final.md)
-6.3.1 (CP01) | [2.2.10.Final](2.2.10.Final.md)
+6.3.1.CP1 | [2.2.10.Final](2.2.10.Final.md)
 6.4.0.GA | [2.5.5.Final](2.5.5.Final.md)
+6.4.0.CP2 | [2.5.6.Final](2.5.6.Final.md)
