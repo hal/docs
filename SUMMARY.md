@@ -11,7 +11,8 @@
   - [Security](building-blocks/security.md)
 - Release Coordination
   - [Distribution](release-coordination/distribution.md)
-  - [Released Versions](release-coordination/versions/README.md)
+  - [Maintenance](release-coordination/maintenance.md)
+  - [Changelog](release-coordination/versions/README.md)
     - [2.0.6.Final](release-coordination/versions/2.0.6.Final.md)
     - [2.1.1.Final](release-coordination/versions/2.1.1.Final.md)
     - [2.2.6.Final](release-coordination/versions/2.2.6.Final.md)
