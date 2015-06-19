@@ -73,6 +73,14 @@ The actual binding:
 
 Extension most often provide their own data objects. Take a look at the [Data Model Section][4]. It describes how custom AutoBean's can be provided and used.
 
+#### Contributions
+
+Extensions are currently used by the following projects to integrate with the management console:
+
+- Switchyard: https://github.com/jboss-switchyard/console
+- Teiid: https://github.com/teiid/teiid-web-console
+- PicketLink: https://github.com/picketlink2/picketlink-console
+
 #### Gotchas
 
 **Packaging Conventions**  
