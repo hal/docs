@@ -21,8 +21,8 @@ It's useful to understand the [building blocks][5] before you dive into the code
 ### Running in hosted mode
 
 1. Make sure WildFly is started
-2. Make sure you build the top level module first (mvn -Pdev clean install).
-3. cd 'build/app'
+1. Make sure you build the top level module first (mvn -Pdev clean install).
+1. cd 'build/app'
 
 You need to add user with WildFly add-user.sh script.
 
@@ -43,9 +43,10 @@ Produces a war file in target/*-resources.jar, which needs to be deployed as a W
 
 To run a customised EAP build (L&amp;F) follow these steps:
 
-1.) Create a dedicated version number (i.e. 1.0.0.EAP.CR2) 2.) Rebuild with the EAP profile enabled:
+1. Create a dedicated version number (i.e. 1.0.0.EAP.CR2) 
+1. Rebuild with the EAP profile enabled:
 
-    mvn -Peap clean install
+        mvn -Peap clean install
 
 ### Development Profile
 
@@ -53,15 +54,11 @@ Due to the increased number of permutations (additional languages) the full comp
 
 1. Build
 
-```
-mvn -Pdev clean install
-```
+        mvn -Pdev clean install
 
-2. Run hosted mode
+1. Run hosted mode
 
-```
-cd 'build/app' mvn -Pdev gwt:run
-```
+        cd 'build/app' mvn -Pdev gwt:run
 
 ### Bind Address
 
@@ -69,16 +66,16 @@ In some cases you may want to bind both the AS and the hosted mode to a specific
 
 1. start the AS on a specific address:
 
-```
-./bin/standalone.sh \
-    -Djboss.bind.address=192.168.2.126 \
-    -Djboss.bind.address.management=192.168.2.126
-
-```
+    ```sh
+    ./bin/standalone.sh \
+        -Djboss.bind.address=192.168.2.126 \
+        -Djboss.bind.address.management=192.168.2.126
+    
+    ```
 
 1. launch hosted mode on a specific address:
 
-    mvn clean -Dgwt.bindAddress=192.168.2.126 gwt:run
+        mvn clean -Dgwt.bindAddress=192.168.2.126 gwt:run
 
 [1]: http://www.wildfly.org/
 [2]: http://www.wildfly.org/download/
