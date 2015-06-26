@@ -24,7 +24,7 @@ public class TransportPresenter {
     @NameToken("teiid-transports")
     @SubsystemExtension(name="Transports", group = "Teiid", key="teiid")
     public interface MyProxy extends ProxyPlace<TransportPresenter> {
-        }
+    }
 }
 ```
 
@@ -81,5 +81,3 @@ Due to the peculiarities of how the GWT compiler works, we need to enforce some 
 
 [1]: https://github.com/hal/release-stream/
 [2]: https://github.com/teiid/teiid-web-console/tree/teiid-console-parent-1.1.0.Final
-[3]: /developer/5_Framework.html
-[4]: /developer/3_data-model.html

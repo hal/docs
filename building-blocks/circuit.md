@@ -1,4 +1,3 @@
-
 # Circuit 
 
 [Circuit][1] provides an uni-directional data flow model for GUI applications. It&#8217;s intended to be used with GWT, but can be leveraged in any Java GUI framework. 
@@ -86,7 +85,7 @@ Many Store implementations rely on asynchronous invocations to the service backe
 When Stores complete the processing of an Action, they acknowledge the Action they processed. This signals the Dispatcher that the next Store can start processing the Action.  
 
 
- [1]: https://github.com/hal/circuit
- [2]: http://facebook.github.io/react/docs/flux-overview.html
- [3]: http://facebook.github.io/react/index.html
- [4]: http://hbraun.info/wp-content/uploads/2014/07/circuit.png
+[1]: https://github.com/hal/circuit
+[2]: http://facebook.github.io/react/docs/flux-overview.html
+[3]: http://facebook.github.io/react/index.html
+[4]: http://hbraun.info/wp-content/uploads/2014/07/circuit.png
