@@ -2,7 +2,7 @@
 
 ## Extensions
 
-The console provides a compile time extension mechanism. Extensions are regular GWT modules that implement the SPI and follow certain packaging conventions. Extension are provided as maven dependencies and distributed through the [hal/release-stream build][1].
+The console provides a compile time extension mechanism. Extensions are regular GWT modules that implement the SPI and follow certain conventions. Extension are provided as maven dependencies and distributed through the [hal/release-stream build][1].
 
 Any extension has access to the regular framework contract, all of it's services and the full dependency injection scope. In order the get an idea how extensions are setup, build and integrated it's best to look at an [example project][2] and [hal/release-stream][1], which acts as an aggregator build.
 
