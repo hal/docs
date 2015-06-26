@@ -6,7 +6,7 @@ The console provides a compile time extension mechanism. Extensions are regular 
 
 Any extension has access to the regular framework contract, all of it's services and the full dependency injection scope. In order the get an idea how extensions are setup, we provide a [maven archetype][3] to get started quickly. The archetype creates an extension with a presenter / view tuple to edit the top level attributes of a given subsystem. 
 
-Normally an extension is a multi maven module which consists of the following sub modules:
+An extension is a multi maven module which consists of the following sub modules:
 
 - `gui`: Contains the GWT code for the extension
 - `app`: Provides a GWT module to run and test the extension
@@ -42,7 +42,7 @@ The extension itself must provide specific building blocks:
 
 ### Maven setup
 
-The `gui` maven module which carries the actual extension must inherit from `org.jboss.as:jboss-as-console-extension`. To run the extension as part of the HAL management console, the `app` module must inherit from `org.jboss.as:jboss-as-console-build` and contain a specific configuration for the `build-helper-maven-plugin` and `maven-processor-plugin` plugin. Create a simple extension using the [archetype][3] and take a look at the generated maven modules for al details. 
+The `gui` maven module which carries the actual extension code must inherit from `org.jboss.as:jboss-as-console-extension`. To run the extension as part of the HAL management console, the `app` module must inherit from `org.jboss.as:jboss-as-console-build` and contain a specific configuration for the `build-helper-maven-plugin` and `maven-processor-plugin` plugin. Create a simple extension using the [archetype][3] and take a look at the generated maven modules for all details. 
 
 ### Extension Point
 
@@ -82,8 +82,6 @@ public class ExtensionBinding extends AbstractPresenterModule {
 
     @Override
     protected void configure() {
-        install(new I18nModule());
-
         bindPresenter(ExtensionPresenter.class,
                 ExtensionPresenter.MyView.class,
                 ExtensionView.class,
