@@ -1,14 +1,14 @@
 # Distribution
 
-This chapter describes the different distribution models for the HAL management console. Basically there are two ways to use the console:
+This page describes the different distribution models for the HAL management console. Basically there are two ways to use the console:
    
 ## Bundled with WildFly
 
-Each WildFly installation ships with a specific version of the HAL management console. To find out which version of HAL relates to which WildFly version, take a look at the [released versions](versions/index.html) page. 
+Each WildFly installation ships with a specific version of the HAL management console. To find out which version of HAL relates to which WildFly version, take a look at the [released versions](maintenance.md#releases) page. 
 
 ## Standalone Console
 
-Starting with HAL [2.6.8.Final](versions/2.6.8.Final.md) and WildFly 9 the console is also available as a standalone web application. These standalone consoles are served from the HAL build proxy living at http://access-halproject.rhcloud.com/. The HAL build proxy provides access to both released HAL versions and snapshots. 
+Starting with HAL 2.6.8.Final and WildFly 9 the console is also available as a standalone web application. These standalone consoles are served from the HAL build proxy living at http://access-halproject.rhcloud.com/. The HAL build proxy provides access to both released HAL versions and snapshots. 
 
 When a standalone console starts, the user can manage a list of management interfaces and chooses the one he likes to connect to. The configuration is stored in the browsers local storage, so it's available the next time the console is launched. 
 
@@ -18,7 +18,7 @@ Using this kind of setup has several advantages:
 - We can have different console versions with different feature sets (nightly, beta, stable)
 - Using one console you can connect to different server instances running different setups (development, staging, production)
 
-In order to make this work, restrictions that come with the [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) (SOP) need to be resolved. Such restrictions arise when the console is served from origin A, but talks to the management interface on origin B. Starting with WildFly 9, the http interface supports the configuration of so-called allowed origins. That is a list of URLs which are allowed to access to the http interface (see http://en.wikipedia.org/wiki/Cross-origin_resource_sharing for more details).
+In order to make this work, restrictions that come with the [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) (SOP) need to be resolved. Such restrictions arise when the console is served from origin A, but talks to the management interface on origin B. Starting with WildFly 9, the http interface supports the configuration of so-called allowed origins. That is a list of URLs which are allowed to access the http interface (see http://en.wikipedia.org/wiki/Cross-origin_resource_sharing for more details).
 
 ### BYO (Build Your Own)
 
@@ -71,3 +71,4 @@ When using the standalone console there are some pitfalls and preconditions you 
 - Make sure to configure the allowed origins before connecting from the standalone console.
 - Don't use different schemes (https and http) for the standalone console and the WildFly instance you want to connect to.
 - In rare cases it might be necessary to clear the cache or use the browser's private mode when switching between different WildFly instances. 
+

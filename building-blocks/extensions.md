@@ -1,34 +1,31 @@
 # Compile Time Extensions 
 
-### Extensions
+## Extensions
 
 The console provides a compile time extension mechanism. Extensions are regular GWT modules that implement the SPI and follow certain packaging conventions. Extension are provided as maven dependencies and distributed through the [hal/release-stream build][1].
 
 Any extension has access to the regular framework contract, all of it's services and the full dependency injection scope. In order the get an idea how extensions are setup, build and integrated it's best to look at an [example project][2] and [hal/release-stream][1], which acts as an aggregator build.
 
-### Contract
+## Contract
 
 The extension SPI has two main building blocks:
 
 * The extension point
 * Gin mixin definitions
 
-#### Extension Point
+### Extension Point
 
 In order to provide an extension point you need to implement a presenter-view (as described in the [Framework section][3]). For the extension to be discovered you need to annotate the Presenter proxy with a `@SubsystemExtension` declaration. This instructs the SPI processor to include another place that represents your subsystem specific dialog:
 
-```
-    public class TransportPresenter {
+```java
+public class TransportPresenter {
 
     @ProxyCodeSplit
     @NameToken("teiid-transports")
     @SubsystemExtension(name="Transports", group = "Teiid", key="teiid")
-    public interface MyProxy
-    		extends Proxy<transportpresenter>,Place {
+    public interface MyProxy extends ProxyPlace<TransportPresenter> {
         }
-
-    }
-
+}
 ```
 
 The extension will be loaded, initialised and revealed automatically by the core framework according to the following criteria:
@@ -36,44 +33,40 @@ The extension will be loaded, initialised and revealed automatically by the core
 * `name` &amp; `group` declarations: The link name and the group for the left hand side navigation.
 * `key`: the subsystem as it is referred to in the DMR model. If the subsystem doesn't exist, the dialog will not be shown.
 
-#### IOC Mixins
+### IOC Mixins
 
 The mixins are needed to extend the dependency injection scope and wire up your presenters-views couples and other utility classes (if needed). A mixin is declared both as a binding and model extension. The `@GinExtension` value refers the GWT module descriptor used with the extension.
 
 The injection points:
 
-```
-
-    @GinExtension("org.jboss.as.console.TeiidExtension")
-    public interface Extension {
-        AsyncProvider<transportpresenter> getTransportPresenter();
-    }
-
+```java
+@GinExtension("org.jboss.as.console.TeiidExtension")
+public interface Extension {
+    AsyncProvider<TransportPresenter> getTransportPresenter();
+}
 ```
 
 The actual binding:
 
-```
+```java
+@GinExtensionBinding
+public class ExtensionBinding extends AbstractPresenterModule {
 
-    @GinExtensionBinding
-    public class ExtensionBinding extends AbstractPresenterModule {
-
-        @Override
-        protected void configure() {
-            bindPresenter(TransportPresenter.class,
-            		TransportPresenter.MyView.class,
-                    TransportView.class,
-                    TransportPresenter.MyProxy.class);
-        }
+    @Override
+    protected void configure() {
+        bindPresenter(TransportPresenter.class,
+                TransportPresenter.MyView.class,
+                TransportView.class,
+                TransportPresenter.MyProxy.class);
     }
-
+}
 ```
 
-#### Data Objects (aka AutoBeans)
+### Data Objects (aka AutoBeans)
 
 Extension most often provide their own data objects. Take a look at the [Data Model Section][4]. It describes how custom AutoBean's can be provided and used.
 
-#### Contributions
+### Contributions
 
 Extensions are currently used by the following projects to integrate with the management console:
 
@@ -81,7 +74,7 @@ Extensions are currently used by the following projects to integrate with the ma
 - Teiid: https://github.com/teiid/teiid-web-console
 - PicketLink: https://github.com/picketlink2/picketlink-console
 
-#### Gotchas
+### Gotchas
 
 **Packaging Conventions**  
 Due to the peculiarities of how the GWT compiler works, we need to enforce some constraints on how you can package your extension code: \- Extension must reside below the package `org.jboss.as.console.client.*`.
