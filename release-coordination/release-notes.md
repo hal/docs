@@ -1,14 +1,13 @@
-# 2.6.6.Final
+# 2.7.4.Final
 
-- Target: WildFly 9.0.0.CR1
-- Release Stream: [2.6.8.Final](https://github.com/hal/release-stream/tree/2.6.8.Final)  
-- Core Console: [2.6.8.Final](https://github.com/hal/core/tree/2.6.8.Final) 
-- Tracking Issue: [WFLY-4573](https://issues.jboss.org/browse/WFLY-4573) 
-
-## Release Notes
+- Target: WildFly 9.0.0.Final
+- Release Stream: [2.7.4.Final](https://github.com/hal/release-stream/tree/2.7.4.Final)  
+- Core Console: [2.7.4.Final](https://github.com/hal/core/tree/2.7.4.Final) 
+- Tracking Issue: [WFLY-4809](https://issues.jboss.org/browse/WFLY-4809) 
 
 ### New & Improved Features
 
+- New finder based user interface
 - Replaced JacORB with IIOP OpenJDK subsystem
 - Remoting subsystem  
 - Support for datasource templates.
@@ -20,6 +19,28 @@
 
 ### Bugfixes
 
+- [HAL-701](https://issues.jboss.org/browse/HAL-701): Fix broken links on homepage
+- [HAL-700](https://issues.jboss.org/browse/HAL-700): Scrolling with nested presenters
+- [HAL-699](https://issues.jboss.org/browse/HAL-699): Closing of notification messages
+- [HAL-698](https://issues.jboss.org/browse/HAL-698): Reload standalone server, server and groups in domain
+- [HAL-697](https://issues.jboss.org/browse/HAL-697): Scrolling in standalone mode
+- [HAL-641](https://issues.jboss.org/browse/HAL-641): Deployment Finder
+- [HAL-690](https://issues.jboss.org/browse/HAL-690), [HAL-691](https://issues.jboss.org/browse/HAL-691): Check and add missing subresource; reset finder column selection
+- [HAL-672](https://issues.jboss.org/browse/HAL-672): Replace old access control UI with finder based UI
+- [HAL-678](https://issues.jboss.org/browse/HAL-678): Server config settings don't refresh after changes
+- [HAL-674](https://issues.jboss.org/browse/HAL-674): Server groups settings don't refresh after changes
+- [HAL-635](https://issues.jboss.org/browse/HAL-635): Runtime/Transaction typo fix.
+- [HAL-665](https://issues.jboss.org/browse/HAL-665): Replace EJB subsystem with MBUI views
+- [HAL-644](https://issues.jboss.org/browse/HAL-644): Hornetq messaging finder contributions
+- [HAL-655](https://issues.jboss.org/browse/HAL-655): Add support for remaining servlet container settings (undertow)
+- [HAL-643](https://issues.jboss.org/browse/HAL-643): Infinispan cache container become finder contributions
+- [HAL-607](https://issues.jboss.org/browse/HAL-607): Additional preview contents
+- [HAL-640](https://issues.jboss.org/browse/HAL-640), [HAL-556](https://issues.jboss.org/browse/HAL-556): server group and profile stores
+- [HAL-606](https://issues.jboss.org/browse/HAL-606): Finder styles
+- [HAL-609](https://issues.jboss.org/browse/HAL-609): Scrolling in finder views
+- [HAL-574](https://issues.jboss.org/browse/HAL-574): Update bootstrap process
+- [BZ119170](https://bugzilla.redhat.com/show_bug.cgi?id=119170): JCA Resource Adapter creation error is 'Unknown Error'
+- [HAL-630](https://issues.jboss.org/browse/HAL-630): Preview content i18n
 - [HAL-582](https://issues.jboss.org/browse/HAL-582): Revisit JCA common configuration
 - [HAL-583](https://issues.jboss.org/browse/HAL-583): Revisit (xa) datasource configuration
 - [HAL-585](https://issues.jboss.org/browse/HAL-585): Revisit resource adapter configuration
@@ -59,21 +80,6 @@
 - [HAL-526](https://issues.jboss.org/browse/HAL-526): Fix add mail server dialog
 - [HAL-523](https://issues.jboss.org/browse/HAL-523): Singleton resource metata, support for list and property attribute types in model browser
 - [HAL-520](https://issues.jboss.org/browse/HAL-520): Ability to choose the available security module codes
-
-# 2.5.6.Final
-
-- Target: EAP 6.4 CP2
-- Release Stream: [2.5.6.Final](https://github.com/hal/release-stream/tree/2.5.6.Final) 
-- Core Console: [2.5.6.Final](https://github.com/hal/core/tree/2.5.6.Final)
-- Tracking Issue: [BZ1222380](https://bugzilla.redhat.com/show_bug.cgi?id=1222380)
-
-## Release Notes
-
-- [BZ1191720](https://bugzilla.redhat.com/show_bug.cgi?id=1191720): JCA Resource Adapter creation error is 'Unknown Error'
-- [BZ1220747](https://bugzilla.redhat.com/show_bug.cgi?id=1220747):  Admin console is not behaving properly after applying deployment filter 
-- [BZ1027841](https://bugzilla.redhat.com/show_bug.cgi?id=1027841): The same key can be used multiple time
-- [HAL-666](https://issues.jboss.org/browse/HAL-666): In Domain mode application replaced via console is not in enabled mode by default
-- [HAL-667](https://issues.jboss.org/browse/HAL-667): Add data-source adds certain attributes to non-default zero values
 
 # 2.5.5.Final
 
@@ -164,17 +170,6 @@
 - [HAL-311](https://issues.jboss.org/browse/HAL-311): Provide the ability to view server logs
 - [HAL-303](https://issues.jboss.org/browse/HAL-303): Improve the question asked when enabling / disabling datasource
 - [HAL-292](https://issues.jboss.org/browse/HAL-292): Add error message when unable to execute an operation
-
-# 2.2.10.Final
-
-- Target: EAP 6.3.1 (CP01)
-- Release Stream: [2.2.10.Final](https://github.com/hal/release-stream/tree/2.2.10.Final) 
-- Core Console: [2.2.10.Final](https://github.com/hal/core/tree/2.2.10.Final) 
-- Tracking Issue: [BZ1128755](https://bugzilla.redhat.com/show_bug.cgi?id=1128755) 
-
-## Release Notes
-
-- [BZ1051991](https://bugzilla.redhat.com/show_bug.cgi?id=1051991): JMS destination statistics are not shown on the admin console
 
 # 2.2.8.Final
 
