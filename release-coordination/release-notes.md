@@ -5,7 +5,7 @@
 - Core Console: [2.7.4.Final](https://github.com/hal/core/tree/2.7.4.Final) 
 - Tracking Issue: [WFLY-4809](https://issues.jboss.org/browse/WFLY-4809) 
 
-### New & Improved Features
+## New & Improved Features
 
 - New finder based user interface
 - Replaced JacORB with IIOP OpenJDK subsystem
@@ -17,62 +17,60 @@
 - Get more details about applied patches
 - Ability to launch the management console independently from WildFly
 
-### Bugfixes
+## Bugfixes
 
 - [HAL-701](https://issues.jboss.org/browse/HAL-701): Fix broken links on homepage
 - [HAL-700](https://issues.jboss.org/browse/HAL-700): Scrolling with nested presenters
 - [HAL-699](https://issues.jboss.org/browse/HAL-699): Closing of notification messages
 - [HAL-698](https://issues.jboss.org/browse/HAL-698): Reload standalone server, server and groups in domain
 - [HAL-697](https://issues.jboss.org/browse/HAL-697): Scrolling in standalone mode
-- [HAL-641](https://issues.jboss.org/browse/HAL-641): Deployment Finder
 - [HAL-690](https://issues.jboss.org/browse/HAL-690), [HAL-691](https://issues.jboss.org/browse/HAL-691): Check and add missing subresource; reset finder column selection
-- [HAL-672](https://issues.jboss.org/browse/HAL-672): Replace old access control UI with finder based UI
 - [HAL-678](https://issues.jboss.org/browse/HAL-678): Server config settings don't refresh after changes
 - [HAL-674](https://issues.jboss.org/browse/HAL-674): Server groups settings don't refresh after changes
-- [HAL-635](https://issues.jboss.org/browse/HAL-635): Runtime/Transaction typo fix.
+- [HAL-672](https://issues.jboss.org/browse/HAL-672): Replace old access control UI with finder based UI
 - [HAL-665](https://issues.jboss.org/browse/HAL-665): Replace EJB subsystem with MBUI views
-- [HAL-644](https://issues.jboss.org/browse/HAL-644): Hornetq messaging finder contributions
 - [HAL-655](https://issues.jboss.org/browse/HAL-655): Add support for remaining servlet container settings (undertow)
+- [HAL-644](https://issues.jboss.org/browse/HAL-644): Hornetq messaging finder contributions
 - [HAL-643](https://issues.jboss.org/browse/HAL-643): Infinispan cache container become finder contributions
-- [HAL-607](https://issues.jboss.org/browse/HAL-607): Additional preview contents
-- [HAL-640](https://issues.jboss.org/browse/HAL-640), [HAL-556](https://issues.jboss.org/browse/HAL-556): server group and profile stores
-- [HAL-606](https://issues.jboss.org/browse/HAL-606): Finder styles
-- [HAL-609](https://issues.jboss.org/browse/HAL-609): Scrolling in finder views
-- [HAL-574](https://issues.jboss.org/browse/HAL-574): Update bootstrap process
-- [BZ119170](https://bugzilla.redhat.com/show_bug.cgi?id=119170): JCA Resource Adapter creation error is 'Unknown Error'
-- [HAL-630](https://issues.jboss.org/browse/HAL-630): Preview content i18n
-- [HAL-582](https://issues.jboss.org/browse/HAL-582): Revisit JCA common configuration
-- [HAL-583](https://issues.jboss.org/browse/HAL-583): Revisit (xa) datasource configuration
-- [HAL-585](https://issues.jboss.org/browse/HAL-585): Revisit resource adapter configuration
-- [HAL-562](https://issues.jboss.org/browse/HAL-562): Fix typo
+- [HAL-641](https://issues.jboss.org/browse/HAL-641): Deployment Finder
+- [HAL-635](https://issues.jboss.org/browse/HAL-635): Runtime/Transaction typo fix.
 - [HAL-634](https://issues.jboss.org/browse/HAL-634): Remove non-heap panel: meatspace has replaced permgen on JDK 8
-- [HAL-473](https://issues.jboss.org/browse/HAL-473): provide http metrics view for undertow
-- [HAL-621](https://issues.jboss.org/browse/HAL-621): Added 'module' attribute to security domain forms
-- [HAL-598](https://issues.jboss.org/browse/HAL-598): Fix jGroups protocol and transport properties
-- [HAL-597](https://issues.jboss.org/browse/HAL-597): Fix interface form validation
-- [HAL-599](https://issues.jboss.org/browse/HAL-599): JXM subsystem attributes have changed
-- [HAL-598](https://issues.jboss.org/browse/HAL-598): Fix backport from master
 - [HAL-633](https://issues.jboss.org/browse/HAL-633): Fix refreshing in deployment / content repository
-- [HAL-561](https://issues.jboss.org/browse/HAL-561): Fix broken filter after removing deployment from content repository
-- [HAL-593](https://issues.jboss.org/browse/HAL-593): Add new IIOP JDK ORB subsystem
-- [HAL-587](https://issues.jboss.org/browse/HAL-587): Revert to action parameter API in stores
-- [HAL-544](https://issues.jboss.org/browse/HAL-544): UI for remoting subsystem
-- [HAL-594](https://issues.jboss.org/browse/HAL-594): Remove JacORB related form validation
+- [HAL-630](https://issues.jboss.org/browse/HAL-630): Preview content i18n
+- [HAL-621](https://issues.jboss.org/browse/HAL-621): Added 'module' attribute to security domain forms
+- [HAL-609](https://issues.jboss.org/browse/HAL-609): Scrolling in finder views
+- [HAL-607](https://issues.jboss.org/browse/HAL-607): Additional preview contents
+- [HAL-606](https://issues.jboss.org/browse/HAL-606): Finder styles
+- [HAL-599](https://issues.jboss.org/browse/HAL-599): JXM subsystem attributes have changed
+- [HAL-598](https://issues.jboss.org/browse/HAL-598): Fix jGroups protocol and transport properties
+- [HAL-598](https://issues.jboss.org/browse/HAL-598): Fix backport from master
+- [HAL-597](https://issues.jboss.org/browse/HAL-597): Fix interface form validation
 - [HAL-594](https://issues.jboss.org/browse/HAL-594): Removed check for 'transactions' flag in JacORB subsystem
+- [HAL-594](https://issues.jboss.org/browse/HAL-594): Remove JacORB related form validation
+- [HAL-593](https://issues.jboss.org/browse/HAL-593): Add new IIOP JDK ORB subsystem
 - [HAL-592](https://issues.jboss.org/browse/HAL-592): Fix default table selection
 - [HAL-591](https://issues.jboss.org/browse/HAL-591): Adjust to changed management model for jgroup protocols
 - [HAL-588](https://issues.jboss.org/browse/HAL-588): Gracfully handle optional resource references
+- [HAL-587](https://issues.jboss.org/browse/HAL-587): Revert to action parameter API in stores
+- [HAL-585](https://issues.jboss.org/browse/HAL-585): Revisit resource adapter configuration
+- [HAL-583](https://issues.jboss.org/browse/HAL-583): Revisit (xa) datasource configuration
+- [HAL-582](https://issues.jboss.org/browse/HAL-582): Revisit JCA common configuration
 - [HAL-580](https://issues.jboss.org/browse/HAL-580): Fix ReadRequiredResources (patch management for standalone is broken)
 - [HAL-575](https://issues.jboss.org/browse/HAL-575): Upgrade GWT to 2.7.0; switch to Super DevMode
+- [HAL-574](https://issues.jboss.org/browse/HAL-574): Update bootstrap process
 - [HAL-573](https://issues.jboss.org/browse/HAL-573): Combine security context setup and r-r-d processing
 - [HAL-572](https://issues.jboss.org/browse/HAL-572): Upgrade GWTP to 1.4
 - [HAL-569](https://issues.jboss.org/browse/HAL-569): Expose all flush-* operations for datasources
 - [HAL-565](https://issues.jboss.org/browse/HAL-565): Add datasource templates
 - [HAL-564](https://issues.jboss.org/browse/HAL-564): Replace data-source=*:enable() / :disable() op
 - [HAL-563](https://issues.jboss.org/browse/HAL-563): Add pager to datasource tables in #ds-metrics
+- [HAL-562](https://issues.jboss.org/browse/HAL-562): Fix typo
+- [HAL-561](https://issues.jboss.org/browse/HAL-561): Fix broken filter after removing deployment from content repository
 - [HAL-560](https://issues.jboss.org/browse/HAL-560): :flush-all-connection-in-pool called
+- [HAL-556](https://issues.jboss.org/browse/HAL-556), [HAL-640](https://issues.jboss.org/browse/HAL-640): server group and profile stores
 - [HAL-554](https://issues.jboss.org/browse/HAL-554): Fix loading settings
 - [HAL-553](https://issues.jboss.org/browse/HAL-553): Use '{selected.profile}' when saving model driven widgets in web presenter
+- [HAL-544](https://issues.jboss.org/browse/HAL-544): UI for remoting subsystem
 - [HAL-536](https://issues.jboss.org/browse/HAL-536): Changing the settings should force reload the browser window
 - [HAL-533](https://issues.jboss.org/browse/HAL-533): Adjust section about latest applied patch
 - [HAL-529](https://issues.jboss.org/browse/HAL-529): Fix hanging "download in progress" dialog
@@ -80,6 +78,7 @@
 - [HAL-526](https://issues.jboss.org/browse/HAL-526): Fix add mail server dialog
 - [HAL-523](https://issues.jboss.org/browse/HAL-523): Singleton resource metata, support for list and property attribute types in model browser
 - [HAL-520](https://issues.jboss.org/browse/HAL-520): Ability to choose the available security module codes
+- [HAL-473](https://issues.jboss.org/browse/HAL-473): provide http metrics view for undertow
 
 # 2.5.5.Final
 
@@ -88,8 +87,9 @@
 - Core Console: [2.5.5.Final](https://github.com/hal/core/tree/2.5.5.Final)
 - Tracking Issue: [BZ1193523](https://bugzilla.redhat.com/show_bug.cgi?id=1193523)
 
-## Release Notes
+## Bugfixes
 
+- [BZ901260](https://bugzilla.redhat.com/show_bug.cgi?id=901260): Updated translations
 - [BZ1176249](https://bugzilla.redhat.com/show_bug.cgi?id=1176249): Product logo depends on product name.
 - [BZ1174732](https://bugzilla.redhat.com/show_bug.cgi?id=1174732): Use '{selected.profile}' when saving model driven widgets in web presenter
 - [BZ1173031](https://bugzilla.redhat.com/show_bug.cgi?id=1173031): Fix loading settings
@@ -103,7 +103,6 @@
 - [BZ1026823](https://bugzilla.redhat.com/show_bug.cgi?id=1026823): run as dialog
 - [BZ1017655](https://bugzilla.redhat.com/show_bug.cgi?id=1017655): Fix validation in WebServicePresenter#onSaveProvider
 - [BZ1017059](https://bugzilla.redhat.com/show_bug.cgi?id=1017059): After :server-set-restart-required operation web console shows reload required message
-- [BZ901260](https://bugzilla.redhat.com/show_bug.cgi?id=901260): Updated translations
 
 # 2.4.9.Final
 
@@ -112,9 +111,7 @@
 - Core Console: [2.4.9.Final](https://github.com/hal/core/tree/2.4.9.Final) 
 - Tracking Issue: [WFLY-4107](https://issues.jboss.org/browse/WFLY-4107) 
 
-## Release Notes
-
-### New & Improved Features
+## New & Improved Features
 
 - Updated look & feel. Now follows the Patternfly styles.
 - Improved information architecture: Domain management, deployments and runtime views have been relocated / consolidated
@@ -125,7 +122,7 @@
 - Improved runtime monitoring: The charts and data tables have been cleaned up
 - See also http://hbraun.info/2014/10/updated-management-console-in-[wildfly-8](https://issues.jboss.org/browse/wildfly-8)-2/
 
-### Bugfixes
+## Bugfixes
 
 - [HAL-514](https://issues.jboss.org/browse/HAL-514): Prepare double click handler on log file table
 - [HAL-512](https://issues.jboss.org/browse/HAL-512): Display deployment "status" attribute on deployment list
@@ -178,17 +175,16 @@
 - Core Console: [2.2.8.Final](https://github.com/hal/core/tree/2.2.8.Final)
 - Tracking Issue: [BZ1104216](https://bugzilla.redhat.com/show_bug.cgi?id=1104216)
 
-## Release Notes
-
-### New & Improved Features
+## New & Improved Features
 
 - Role based access control (RBAC)
 - Patching
 - New top level navigation
 - Home page
 
-### Bugfixes
+## Bugfixes
 
+- [BZ901227](https://bugzilla.redhat.com/show_bug.cgi?id=901227): Allow -1 as default value for modcluster timeout attributes
 - [BZ1092650](https://bugzilla.redhat.com/show_bug.cgi?id=1092650): Add pager to list of EE modules
 - [BZ1088314](https://bugzilla.redhat.com/show_bug.cgi?id=1088314): Fix refresh in JacORB view
 - [BZ1081990](https://bugzilla.redhat.com/show_bug.cgi?id=1081990): Add restart button; fix for one-off patches
@@ -206,7 +202,6 @@
 - [BZ1072337](https://bugzilla.redhat.com/show_bug.cgi?id=1072337): Fix recovery from verify connection failed
 - [BZ1071949](https://bugzilla.redhat.com/show_bug.cgi?id=1071949): Redirect when trying to access "Security Domains"
 - [BZ1070130](https://bugzilla.redhat.com/show_bug.cgi?id=1070130): Postpone driver auto detection
-- [BZ901227](https://bugzilla.redhat.com/show_bug.cgi?id=901227): Allow -1 as default value for modcluster timeout attributes
 - [EAP6-109](https://issues.jboss.org/browse/EAP6-109): New top-level navigation
 - [EAP6-87](https://issues.jboss.org/browse/EAP6-87): Analytics is disabled in product version by default
 - [EAP6-66](https://issues.jboss.org/browse/EAP6-66): Add ability to test the connection for new and existing datasources
@@ -220,15 +215,13 @@
 - Core Console: [2.2.6.Final](https://github.com/hal/core/tree/2.2.6.Final) 
 - Tracking Issue: [WFLY-3332](https://issues.jboss.org/browse/WFLY-3332) 
 
-## Release Notes
-
-### New & Improved Features
+## New & Improved Features
 
 - Patching
 - New top level navigation
 - Home page
 
-### Bugfixes
+## Bugfixes
 
 - [HAL-403](https://issues.jboss.org/browse/HAL-403): Fix index setup
 - [HAL-402](https://issues.jboss.org/browse/HAL-402): Fix refresh when using view framework
@@ -254,15 +247,13 @@
 - Core Console: [2.1.1.Final](https://github.com/hal/core/tree/2.1.1.Final)
 - Tracking Issue: [HAL-346](https://issues.jboss.org/browse/HAL-346)
 
-## Release Notes
-
-### New & Improved Features
+## New & Improved Features
 
 - Topology View
 - Performance
 - RBAC sensitive UI
 
-### Bugfixes
+## Bugfixes
 
 - [HAL-337](https://issues.jboss.org/browse/HAL-337): Partly undo fix which was introduced by HAL-10
 - [HAL-336](https://issues.jboss.org/browse/HAL-336): Show a warning and change default place to "Profiles" if there are no groups defined.
