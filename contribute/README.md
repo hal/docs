@@ -78,7 +78,7 @@ In some cases you may want to bind both the AS and the hosted mode to a specific
         mvn clean -Dgwt.bindAddress=192.168.2.126 gwt:run
 
 [1]: http://www.wildfly.org/
-[2]: http://www.wildfly.org/download/
+[2]: http://www.wildfly.org/downloads/
 [3]: http://www.gwtproject.org/gettingstarted.html
 [4]: https://github.com/arcbees/gwtp/
 [5]: https://github.com/arcbees/gwtp/wiki
