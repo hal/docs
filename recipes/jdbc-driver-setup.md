@@ -5,7 +5,7 @@ The installation of JDBC drivers and the setup of (xa)datasources is a common ta
 # Install as Module
 
 1. Download the driver from the [MySQL website](https://dev.mysql.com/downloads/connector/j/)
-1. Go to `WILDFLY_HOME/modules` and create the folder `mysql/main`
+1. Go to `WILDFLY_HOME/modules` and create the folder `com/mysql/main`
 1. Unzip the downloaded file and copy the file `mysql-connector-java-5.1.23-bin.jar` to the new folder `WILDFLY_HOME/modules/com/mysql/main`
 1. Create the file `module.xml` in the same folder with the following content:
 
